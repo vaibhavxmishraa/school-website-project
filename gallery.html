@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Mother Mary Public School</title>
+<meta name="description" content="Browse photos of Mother Mary Public School's campus, classrooms, sports days, functions and student events.">
+<meta name="keywords" content="school gallery, campus photos, school events, sports day photos">
+<link rel="canonical" href="https://www.mothermarypublicschool.example/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gallery | Mother Mary Public School">
+<meta property="og:description" content="A visual tour of campus, classrooms, sports and school functions.">
+<meta property="og:image" content="https://picsum.photos/seed/mmps-og/1200/630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/mothermarry.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Full-screen loader shown briefly while the page boots -->
+<div class="page-loader"><div class="loader-mark"></div><span class="loader-text">Loading</span></div>
+<!-- Thin bar at the very top that fills as the user scrolls down -->
+<div class="progress-bar"></div>
+
+<!-- Auto-scrolling highlights ticker (top info bar) -->
+<div class="ticker-bar" aria-label="School highlights">
+  <div class="ticker-track"><span>Admissions Open 2026-27</span><span>Smart Classrooms</span><span>Experienced Teachers</span><span>Transport Available</span><span>Computer Lab</span><span>Science Lab</span><span>Annual Sports Meet</span><span>100% Student Safety</span></div>
+</div>
+
+<!-- Sticky site navigation: logo, links, dark-mode toggle, mobile menu -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><span class="brand-logo">M</span><span class="brand-text"><strong>Mother Mary</strong><span>Public School</span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 22px;">Admission</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Page title / breadcrumb banner -->
+<section class="page-header">
+  <div class="page-header-inner">
+    <p class="eyebrow" style="justify-content:center;color:var(--gold-light)">Campus Life</p>
+    <h1>Photo Gallery</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+  </div>
+</section>
+
+<!-- Category filter buttons + masonry photo grid (JS handles filtering + lightbox) -->
+<section class="section">
+  <div class="container">
+    <div class="filter-bar" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="campus">Campus</button>
+      <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="functions">Functions</button>
+    </div>
+
+    <div class="masonry" data-aos="fade-up">
+      <div class="masonry-item" data-category="campus"><img src="https://picsum.photos/seed/mg1/500/650" alt="School main building exterior" loading="lazy"><div class="masonry-overlay">Campus · Main Building</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="https://picsum.photos/seed/mg2/500/380" alt="Smart classroom with digital board" loading="lazy"><div class="masonry-overlay">Classrooms · Smart Class</div></div>
+      <div class="masonry-item" data-category="sports"><img src="https://picsum.photos/seed/mg3/500/560" alt="Students playing on the sports field" loading="lazy"><div class="masonry-overlay">Sports · Athletics</div></div>
+      <div class="masonry-item" data-category="events"><img src="https://picsum.photos/seed/mg4/500/420" alt="Science exhibition event" loading="lazy"><div class="masonry-overlay">Events · Science Exhibition</div></div>
+      <div class="masonry-item" data-category="functions"><img src="https://picsum.photos/seed/mg5/500/620" alt="Students performing on stage" loading="lazy"><div class="masonry-overlay">Functions · Annual Day</div></div>
+      <div class="masonry-item" data-category="campus"><img src="https://picsum.photos/seed/mg6/500/400" alt="School garden and play area" loading="lazy"><div class="masonry-overlay">Campus · Play Zone</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="https://picsum.photos/seed/mg7/500/540" alt="Students working in computer lab" loading="lazy"><div class="masonry-overlay">Classrooms · Computer Lab</div></div>
+      <div class="masonry-item" data-category="sports"><img src="https://picsum.photos/seed/mg8/500/380" alt="Basketball court on campus" loading="lazy"><div class="masonry-overlay">Sports · Basketball</div></div>
+      <div class="masonry-item" data-category="events"><img src="https://picsum.photos/seed/mg9/500/460" alt="Annual sports meet opening ceremony" loading="lazy"><div class="masonry-overlay">Events · Sports Meet</div></div>
+      <div class="masonry-item" data-category="functions"><img src="https://picsum.photos/seed/mg10/500/400" alt="Prize distribution ceremony" loading="lazy"><div class="masonry-overlay">Functions · Prize Day</div></div>
+      <div class="masonry-item" data-category="campus"><img src="https://picsum.photos/seed/mg11/500/560" alt="School library reading hall" loading="lazy"><div class="masonry-overlay">Campus · Library</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="https://picsum.photos/seed/mg12/500/420" alt="Students in science laboratory" loading="lazy"><div class="masonry-overlay">Classrooms · Science Lab</div></div>
+      <div class="masonry-item" data-category="events"><img src="https://picsum.photos/seed/mg13/500/500" alt="Independence Day celebration" loading="lazy"><div class="masonry-overlay">Events · Independence Day</div></div>
+      <div class="masonry-item" data-category="sports"><img src="https://picsum.photos/seed/mg14/500/440" alt="Yoga session on the school lawn" loading="lazy"><div class="masonry-overlay">Sports · Yoga</div></div>
+      <div class="masonry-item" data-category="functions"><img src="https://picsum.photos/seed/mg15/500/380" alt="Cultural dance performance" loading="lazy"><div class="masonry-overlay">Functions · Cultural Fest</div></div>
+      <div class="masonry-item" data-category="campus"><img src="https://picsum.photos/seed/mg16/500/460" alt="School corridor and lockers" loading="lazy"><div class="masonry-overlay">Campus · Corridor</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <button class="lightbox-close" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+  <img src="" alt="">
+  <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+</div>
+
+<!-- Site-wide footer: about blurb, quick links, newsletter, credits -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-logo">M</span><strong>Mother Mary Public School</strong></div>
+      <p class="about-text">A premier co-educational institution committed to academic excellence, character building and holistic growth since 2008.</p>
+      <div class="social-icons"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Twitter">𝕏</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Academics</h4><ul class="footer-links"><li><a href="academics.html">Smart Classes</a></li><li><a href="academics.html">Science Lab</a></li><li><a href="academics.html">Computer Lab</a></li><li><a href="academics.html">Sports</a></li></ul></div>
+    <div>
+      <h4>Newsletter</h4>
+      <p class="about-text">Subscribe for admission updates and school news.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.reset(); alert('Subscribed! Thank you.');">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Mother Mary Public School. All rights reserved.</span>
+    <span>Designed &amp; Developed with ❤️ by <strong>Vaibnex Technologies</strong> — Website Developer: Vaibhav Mishra — +91 9839079733</span>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="main.js"></script>
+</body>
+</html>
